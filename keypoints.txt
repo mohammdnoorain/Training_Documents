@@ -1,0 +1,10 @@
+ansible
+#######
+ansible controller vm--create user and inside that create keys 
+ansible nodes- create user and inside that create .ssh and authorized_keys file
+copy public key of controller to ansible node>authorized_keys
+give access to ansible controller user  to access /etc/ansible folder using chmod -R devopsadmin:devopsadmin /etc/ansible/*
+and give access to ansible node user > node>root>visudo>ansibleadmin ALL=(ALL) NOPASSWD: ALL
+
+
+in host file add group name and inside it add nodes  
